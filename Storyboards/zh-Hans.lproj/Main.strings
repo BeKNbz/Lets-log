@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "新規ログ..."; ObjectID = "1Ma-yn-hyB"; */
+"1Ma-yn-hyB.text" = "新日志...";
+
+/* Class = "UINavigationItem"; title = "メニュー"; ObjectID = "a88-gA-GE4"; */
+"a88-gA-GE4.title" = "菜单";
+
+/* Class = "UILabel"; text = "全てのログ"; ObjectID = "wNl-aZ-WT5"; */
+"wNl-aZ-WT5.text" = "所有日志";
+
+/* Class = "UILabel"; text = "（0）"; ObjectID = "xmE-nE-W0a"; */
+"xmE-nE-W0a.text" = "（0）";

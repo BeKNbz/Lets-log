@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "現在日時を設定"; ObjectID = "0oU-g8-gFA"; */
+"0oU-g8-gFA.normalTitle" = "現在日時を設定";
+
+/* Class = "UILabel"; text = "00:00"; ObjectID = "0z2-ZP-oLZ"; */
+"0z2-ZP-oLZ.text" = "00:00";
+
+/* Class = "UILabel"; text = "開始"; ObjectID = "BlP-0F-MJ3"; */
+"BlP-0F-MJ3.text" = "从何時";
+
+/* Class = "UIBarButtonItem"; title = "キャンセル"; ObjectID = "DQH-Ip-nH2"; */
+"DQH-Ip-nH2.title" = "取消";
+
+/* Class = "UIBarButtonItem"; title = "完了"; ObjectID = "K7c-6V-71D"; */
+"K7c-6V-71D.title" = "固定";
+
+/* Class = "UINavigationItem"; title = "日時の変更"; ObjectID = "aIQ-ge-6Gh"; */
+"aIQ-ge-6Gh.title" = "改变日期";

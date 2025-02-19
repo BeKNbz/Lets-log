@@ -1,0 +1,30 @@
+
+/* Class = "UINavigationItem"; title = "エクスポート"; ObjectID = "1ku-VG-Hm3"; */
+"1ku-VG-Hm3.title" = "エクスポート";
+
+/* Class = "UILabel"; text = "※一括での出力は件数によって時間がかかる場合があります。"; ObjectID = "9oC-1l-oZd"; */
+"9oC-1l-oZd.text" = "※一括での出力は件数によって時間がかかる場合があります";
+
+/* Class = "UIButton"; normalTitle = "エクスポート"; ObjectID = "Aqf-3K-nna"; */
+"Aqf-3K-nna.normalTitle" = "エクスポート";
+
+/* Class = "UIButton"; normalTitle = "UTF-8"; ObjectID = "P1z-4u-tdT"; */
+"P1z-4u-tdT.normalTitle" = "UTF-8";
+
+/* Class = "UILabel"; text = "〜"; ObjectID = "U6h-du-E2V"; */
+"U6h-du-E2V.text" = "〜";
+
+/* Class = "UISegmentedControl"; anu-Oc-1XH.segmentTitles[0] = "日付で指定"; ObjectID = "anu-Oc-1XH"; */
+"anu-Oc-1XH.segmentTitles[0]" = "日付で指定";
+
+/* Class = "UISegmentedControl"; anu-Oc-1XH.segmentTitles[1] = "全件一括"; ObjectID = "anu-Oc-1XH"; */
+"anu-Oc-1XH.segmentTitles[1]" = "全件一括";
+
+/* Class = "UIButton"; normalTitle = "文字コードについて"; ObjectID = "ggI-X6-NrQ"; */
+"ggI-X6-NrQ.normalTitle" = "文字コードについて";
+
+/* Class = "UILabel"; text = "出力範囲"; ObjectID = "loY-sn-S0p"; */
+"loY-sn-S0p.text" = "出力範囲";
+
+/* Class = "UILabel"; text = "文字コード"; ObjectID = "xYF-Uk-mSJ"; */
+"xYF-Uk-mSJ.text" = "文字コード";

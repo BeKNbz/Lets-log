@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Time View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SelectTimeViewController" customModule="LifeLogApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oot-Rp-Tb3" userLabel="Header View">
+                                <rect key="frame" x="0.0" y="64" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1月1日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wic-6c-pKI">
+                                        <rect key="frame" x="175" y="12" width="64" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="wic-6c-pKI" firstAttribute="centerX" secondItem="Oot-Rp-Tb3" secondAttribute="centerX" id="R5E-Kd-iAf"/>
+                                    <constraint firstItem="wic-6c-pKI" firstAttribute="centerY" secondItem="Oot-Rp-Tb3" secondAttribute="centerY" id="TGl-yv-pD6"/>
+                                    <constraint firstAttribute="height" constant="50" id="cRA-zy-xUZ"/>
+                                </constraints>
+                            </view>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="vb5-mX-prI">
+                                <rect key="frame" x="0.0" y="114" width="414" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="vpR-Bg-Lj4"/>
+                                </constraints>
+                            </datePicker>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yhv-Xs-OFY" userLabel="Center Line">
+                                <rect key="frame" x="0.0" y="294" width="414" height="1"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="nmH-xl-lu7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dzm-hM-c5E" userLabel="Separater">
+                                <rect key="frame" x="206.5" y="295" width="1" height="50"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bne-gM-c28"/>
+                                    <constraint firstAttribute="width" constant="1" id="bBc-t6-KWM"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwG-ic-bX2">
+                                <rect key="frame" x="0.0" y="295" width="206.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IzO-jb-IRG"/>
+                                </constraints>
+                                <state key="normal" title="キャンセル"/>
+                                <connections>
+                                    <action selector="onClickCancel" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3ih-MU-Yod"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uC-lj-Fq3" userLabel="Bottom Line">
+                                <rect key="frame" x="0.0" y="345" width="414" height="1"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="1Dg-p5-J2X"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60o-aX-6ae">
+                                <rect key="frame" x="207.5" y="295" width="206.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="b0V-g4-odz"/>
+                                </constraints>
+                                <state key="normal" title="完了"/>
+                                <connections>
+                                    <action selector="onClickDone" destination="Y6W-OH-hqX" eventType="touchUpInside" id="T49-cl-eSK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="60o-aX-6ae" firstAttribute="leading" secondItem="Dzm-hM-c5E" secondAttribute="trailing" id="59K-8w-nKB"/>
+                            <constraint firstItem="Yhv-Xs-OFY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6Yg-iM-JG2"/>
+                            <constraint firstItem="60o-aX-6ae" firstAttribute="leading" secondItem="Dzm-hM-c5E" secondAttribute="trailing" id="6cV-yM-PZF"/>
+                            <constraint firstItem="60o-aX-6ae" firstAttribute="top" secondItem="Yhv-Xs-OFY" secondAttribute="bottom" id="9Gu-sO-rx9"/>
+                            <constraint firstItem="vb5-mX-prI" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="J2F-a6-yDT"/>
+                            <constraint firstItem="Dzm-hM-c5E" firstAttribute="top" secondItem="Yhv-Xs-OFY" secondAttribute="bottom" id="K8l-Kg-sGb"/>
+                            <constraint firstItem="vb5-mX-prI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="KoG-b8-qj5"/>
+                            <constraint firstItem="Dzm-hM-c5E" firstAttribute="leading" secondItem="UwG-ic-bX2" secondAttribute="trailing" id="UBl-BC-jwO"/>
+                            <constraint firstItem="vb5-mX-prI" firstAttribute="top" secondItem="Oot-Rp-Tb3" secondAttribute="bottom" id="VSy-5g-0ZI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Oot-Rp-Tb3" secondAttribute="trailing" id="XlM-dJ-EbQ"/>
+                            <constraint firstItem="Oot-Rp-Tb3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Z8s-7x-kcw"/>
+                            <constraint firstItem="60o-aX-6ae" firstAttribute="width" secondItem="UwG-ic-bX2" secondAttribute="width" id="aWi-C2-elH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="60o-aX-6ae" secondAttribute="trailing" id="cjg-OV-Cuo"/>
+                            <constraint firstItem="UwG-ic-bX2" firstAttribute="top" secondItem="Yhv-Xs-OFY" secondAttribute="bottom" id="dVx-FS-s21"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Yhv-Xs-OFY" secondAttribute="trailing" id="iY6-th-Dqb"/>
+                            <constraint firstItem="3uC-lj-Fq3" firstAttribute="top" secondItem="UwG-ic-bX2" secondAttribute="bottom" id="pD6-U0-FLf"/>
+                            <constraint firstItem="3uC-lj-Fq3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rtS-c8-XbG"/>
+                            <constraint firstItem="UwG-ic-bX2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sEj-fg-5u6"/>
+                            <constraint firstItem="Oot-Rp-Tb3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="tiO-7W-j4o"/>
+                            <constraint firstItem="Yhv-Xs-OFY" firstAttribute="top" secondItem="vb5-mX-prI" secondAttribute="bottom" id="u5k-AA-XgX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="3uC-lj-Fq3" secondAttribute="trailing" id="ucl-Vh-cqA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="UwG-ic-bX2" id="7aT-dv-S9a"/>
+                        <outlet property="datePicker" destination="vb5-mX-prI" id="kxS-uP-Vc5"/>
+                        <outlet property="doneButton" destination="60o-aX-6ae" id="TAH-Yy-7nN"/>
+                        <outlet property="titleLabel" destination="wic-6c-pKI" id="AbR-O8-gXI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="33.482142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
